@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. 不给宽高，让元素垂直水平居中 start*/
+        /* flex布局 实现 */
+        /* 
+        .container {
+            background-color: cyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            background-color: red;
+        } 
+        */
+        /* position布局 实现 */
+        /*         
+        .container {
+            background-color: cyan;
+            position: relative;
+            width: 800px;
+            height: 800px;
+        }
+
+        .content {
+            background-color: red;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, 50%);
+        } 
+        */
+
+        /* 1. 不给宽高，让元素垂直水平居中 end*/
+
+        /* 2. 双飞翼布局 start*/
+        /*         
+        .container div {
+            float: left;
+        }
+
+        .left {
+            background-color: cyan;
+            width: 200px;
+            margin-left: -100%;
+        }
+
+        .content {
+            background-color: red;
+            width: 100%;
+        }
+
+        .right {
+            background-color: blue;
+            width: 200px;
+            margin-left: -200px;
+        } 
+        */
+        /* 2. 双飞翼布局 end*/
+    </style>
+</head>
+
+<body>
+    <!-- 1. 不给宽高，让元素垂直水平居中 start -->
+    <!-- 
+    <div class="container">
+        <div class="content">content</div>
+    </div>
+     -->
+    <!-- 1. 不给宽高，让元素垂直水平居中 end -->
+
+
+    <!-- 2. 双飞翼布局 end -->
+
+    <div class="container">
+        <div class="content">content</div>
+        <div class="left">Left</div>
+        <div class="right">Right</div>
+    </div>
+
+    <!-- 2. 双飞翼布局 end -->
+
+</body>
+
+</html>
